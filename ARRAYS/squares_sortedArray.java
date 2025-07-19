@@ -34,7 +34,7 @@ public class squares_sortedArray {
     }
     public static void main(String[] args) {
         int arr[] = {-4,-1,0,3,10};
-        // System.out.print(Arrays.toString(Brute_Sol(arr)));
+        System.out.print(Arrays.toString(Brute_Sol(arr)));
         System.out.print(Arrays.toString(Two_Pointers(arr)));
     }
 }

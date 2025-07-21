@@ -2,6 +2,7 @@ package ARRAYS;
 
 public class backspace_String_Compare {
 
+    //Brute Force -- SC : O(m + n) TC :O(m + n)
     public boolean backspace_Compare(String s, String t){
         return build(s).equals(build(t));
     }

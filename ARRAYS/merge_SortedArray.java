@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class merge_SortedArray {
 
+    //Brute force
     public static void merge_Brute_Force(int nums1[], int nums2[], int m, int n){
         int j = 0;
         for(int i = m; i < m + n; i++){
@@ -14,6 +15,7 @@ public class merge_SortedArray {
         System.out.print(Arrays.toString(nums1));
     }
 
+    //Optimal Approach
     public static void merge_Optimal_Sol(int nums1[], int nums2[], int m, int n){
         
         int midx = m - 1;

@@ -37,7 +37,7 @@ public class merge_SortedArray {
         int nums2[] = {2,5,6};
         int m = 3;
         int n = 3;
-        // merge_Brute_Force(nums1, nums2, m, n);
+        merge_Brute_Force(nums1, nums2, m, n);
         merge_Optimal_Sol(nums1, nums2, m, n);
     }
 }

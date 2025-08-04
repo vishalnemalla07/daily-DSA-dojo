@@ -16,10 +16,26 @@ public class max_SubArray_with_K_elements {
         }
         return maxSum;
     }
+
+public static int sliding_window(int nums[], int k){
+    int maxSum = 0;
+
+    for(int i = 0; i < k; i++){
+        maxSum += nums[i];
+    }
+
+    int window_Sum = maxSum;
+    for(int j = k; j < nums.length; j++){
+        window_Sum += nums[j] - nums[j - k];
+        maxSum = Math.max(maxSum, window_Sum);
+    }
+    return maxSum;
+}
+
      public static void main(String[] args) {
-        int arr[] = {100, 200, 300, 400};
-        int k = 2;
-        System.out.println(max_Sub_Array(arr, k));
+        int arr[] = {1, 4, 2, 10, 23, 3, 1, 0, 20};
+        int k = 4;
+        System.out.println(sliding_window(arr, k));
 
     }
 }
